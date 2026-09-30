@@ -1,0 +1,304 @@
+<main>
+
+  <!-- PRESENTACIÓN -->
+  <section class="bg-light text-center py-5">
+    <div class="container">
+      <h2>Tu salud es nuestra prioridad</h2>
+
+      <p class="lead">
+        Atención médica de calidad con profesionales especializados.
+      </p>
+
+      <a href="#contacto" class="btn btn-primary">
+        Solicitar atención
+      </a>
+    </div>
+  </section>
+
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-5">
+
+    <div class="container">
+
+      <h2 class="text-center mb-4">
+        Nuestros servicios
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5>Emergencias</h5>
+              <p>Atención médica las 24 horas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5>Laboratorio</h5>
+              <p>Análisis clínicos confiables.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5>Consultas</h5>
+              <p>Atención con médicos especializados.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MÉDICOS -->
+  <section id="medicos" class="py-5 bg-light">
+
+    <div class="container">
+
+      <h2 class="text-center mb-4">
+        Nuestros médicos
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5>Dr. Carlos Pérez</h5>
+              <p class="text-primary">Cardiología</p>
+              <p>Especialista en enfermedades cardiovasculares.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5>Dra. Ana Torres</h5>
+              <p class="text-primary">Pediatría</p>
+              <p>Atención para niños y adolescentes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <h5>Dr. Luis Mendoza</h5>
+              <p class="text-primary">Dermatología</p>
+              <p>Especialista en enfermedades de la piel.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROMOCIONES -->
+  <section id="promociones" class="py-5">
+
+    <div class="container">
+
+      <h2 class="text-center mb-4">
+        Promociones
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5>Chequeo preventivo</h5>
+              <p>Consulta + análisis básicos.</p>
+              <h4 class="text-primary">S/ 99</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5>Campaña de salud</h5>
+              <p>Descuento especial en consultas.</p>
+              <h4 class="text-success">20% OFF</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESEÑAS -->
+  <section id="resenas" class="py-5 bg-light">
+
+    <div class="container">
+
+      <h2 class="text-center mb-4">
+        Reseñas de pacientes
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p>"Excelente atención y buenos profesionales."</p>
+              <strong>María López</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p>"La atención fue rápida y amable."</p>
+              <strong>Pedro Ramos</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p>"Muy satisfecho con el servicio."</p>
+              <strong>Lucía Flores</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FORMULARIO -->
+  <section id="contacto" class="py-5">
+
+    <div class="container">
+
+      <h2 class="text-center mb-4">
+        Solicitar atención
+      </h2>
+
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-8">
+
+          <form (ngSubmit)="agregarPaciente()" class="card p-4">
+
+            <div class="mb-3">
+              <label class="form-label">
+                Nombre
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="nombre"
+                name="nombre">
+            </div>
+
+
+            <div class="mb-3">
+              <label class="form-label">
+                Correo
+              </label>
+
+              <input
+                type="email"
+                class="form-control"
+                [(ngModel)]="correo"
+                name="correo">
+            </div>
+
+
+            <div class="mb-3">
+              <label class="form-label">
+                Motivo de consulta
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="motivo"
+                name="motivo">
+            </div>
+
+
+            <button class="btn btn-primary">
+              Registrar
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+      <div class="mt-5">
+
+        <h3 class="text-center mb-4">
+          Solicitudes registradas
+        </h3>
+
+        <div class="row g-3">
+
+          @for (paciente of pacientes; track paciente.nombre) {
+
+            <div class="col-12 col-md-4">
+
+              <div class="card h-100">
+
+                <div class="card-body">
+
+                  <h5>{{ paciente.nombre }}</h5>
+
+                  <p>
+                    <strong>Correo:</strong>
+                    {{ paciente.correo }}
+                  </p>
+
+                  <p>
+                    <strong>Motivo:</strong>
+                    {{ paciente.motivo }}
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          }
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
